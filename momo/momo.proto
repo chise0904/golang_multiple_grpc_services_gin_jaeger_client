@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package momo;
+
+service Byebye {
+  rpc SayBye(MomoRequest) returns (MomoReply) {}
+}
+
+message MomoRequest {
+  string message = 1;
+}
+
+message MomoReply {
+  string message = 1;
+}
